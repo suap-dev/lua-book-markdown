@@ -46,7 +46,7 @@ end
 function Set.intersection (a,b)
     local res = Set.new{}
     for k in pairs(a) do
-    res[k] = b[k]
+        res[k] = b[k]
     end
     return res
 end
@@ -59,8 +59,8 @@ function Set.tostring (set)
     local s = "{"
     local sep = ""
     for e in pairs(set) do
-    s = s .. sep .. e
-    sep = ", "
+        s = s .. sep .. e
+        sep = ", "
     end
     return s .. "}"
 end
@@ -159,7 +159,7 @@ In our example with sets, we have a similar problem. An obvious (and useful) mea
 ```lua
 Set.mt.__le = function (a,b)    -- set containment
     for k in pairs(a) do
-    if not b[k] then return false end
+        if not b[k] then return false end
     end
     return true
 end
