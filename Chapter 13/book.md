@@ -230,6 +230,7 @@ print(getmetatable(s1))     --> not your business
 setmetatable(s1, {})
     stdin:1: cannot change protected metatable
 ```
+
 ---
 
 ## 13.4 – Table-Access Metamethods
